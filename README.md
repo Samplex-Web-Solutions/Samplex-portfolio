@@ -1,15 +1,26 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
+=======
+# 🌐 My Portfolio Website
+>>>>>>> 13e4493464c2c25a8f2e68ff3260876ff6c527a3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React.js**, **Tailwind CSS**, and **EmailJS**.  
+It showcases my skills, education, projects, and experience as a software developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Responsive design for all devices
+- Dynamic project showcase
+- Education and certifications section
+- Animated counters (experience, projects, clients, etc.)
+- Contact form integrated with EmailJS
+- Dark mode optimized
 
-## Expanding the ESLint configuration
+---
 
+<<<<<<< HEAD
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 =======
 # 🌐 My Portfolio Website
@@ -29,6 +40,8 @@ It showcases my skills, education, projects, and experience as a software develo
 
 ---
 
+=======
+>>>>>>> 13e4493464c2c25a8f2e68ff3260876ff6c527a3
 ## 🛠️ Tech Stack
 - **Frontend:** React.js, Tailwind CSS
 - **Animations:** Framer Motion / Tailwind Transitions
@@ -43,4 +56,7 @@ If you’d like to collaborate, hire me, or just say hello:
 - Email: samplexwebsolutions@gmail.com  
 - LinkedIn: https://bit.ly/3uiKRle   
 - GitHub: https://github.com/Samplex-Web-Solutions
+<<<<<<< HEAD
 >>>>>>> 85ebbade0334538180fa97814fb0282d3037114f
+=======
+>>>>>>> 13e4493464c2c25a8f2e68ff3260876ff6c527a3
