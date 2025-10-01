@@ -1,6 +1,6 @@
 import { words } from "../constants";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import OjiemenSamuel_Resume from "../assets/Ojiemen_Samuel_Resume.pdf";
+import OjiemenSamuel_Resume from "../assets/OjiemenSamuel_Resume.pdf";
 import profile from "/images/myprofile.png";
 import { useEffect, useState, useRef } from "react";
 
