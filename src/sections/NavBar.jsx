@@ -70,7 +70,7 @@ const NavBar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className=" nav-links absolute top-16 left-0 w-full bg-white px-6 py-4 shadow-md z-40 flex flex-col gap-4 text-gray-800 font-semibold md:hidden"
+            className=" nav-links absolute top-16 left-0 w-full bg-white/60 px-6 py-4 shadow-md z-40 flex flex-col gap-4 text-gray-800 font-semibold md:hidden"
           >
             <li className="cursor-pointer hover:text-blue-500 transition">
               <a href="#hero">Home</a>

@@ -5,6 +5,7 @@ import {
   EnvelopeIcon,
   ChatBubbleOvalLeftEllipsisIcon,
 } from "@heroicons/react/24/outline";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -31,16 +32,14 @@ const Contact = () => {
       )
       .then(
         () => {
-          setStatus("success");
+          toast.success("Message sent successfully!");
           setForm({ name: "", email: "", message: "" });
 
           // Clear message after 3 seconds
           setTimeout(() => setStatus(null), 3000);
         },
         (error) => {
-          console.error("Error:", error.text);
-          setStatus("error");
-
+          toast.error("Something went wrong. Please try again.");
           // Clear error after 3 seconds
           setTimeout(() => setStatus(null), 3000);
         }
@@ -58,7 +57,6 @@ const Contact = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name */}
-          {/* Name */}
           <div className="relative">
             <UserIcon className="absolute left-3 top-4 h-5 w-5 text-gray-400" />
             <input
@@ -71,7 +69,7 @@ const Contact = () => {
               required
             />
             <label
-              className="absolute left-10 top-1 text-sm text-blue-500 transition-all
+              className="absolute left-10 top-[.15rem] text-sm text-blue-500 transition-all
                peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base 
                peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-500"
             >
@@ -92,7 +90,7 @@ const Contact = () => {
               required
             />
             <label
-              className="absolute left-10 top-1 text-sm text-blue-500 transition-all
+              className="absolute left-10 top-[.15rem] text-sm text-blue-500 transition-all
                peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base 
                peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-500"
             >
@@ -113,7 +111,7 @@ const Contact = () => {
               required
             />
             <label
-              className="absolute left-10 top-1 text-sm text-blue-500 transition-all
+              className="absolute left-10 top-[.15rem] text-sm text-blue-500 transition-all
                peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base 
                peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-500"
             >
@@ -133,14 +131,10 @@ const Contact = () => {
 
         {/* Status Messages */}
         {status === "success" && (
-          <p className="text-green-500 mt-4 text-center">
-            ✅ Message sent successfully!
-          </p>
+          toast.success("Message sent successfully!")
         )}
         {status === "error" && (
-          <p className="text-red-500 mt-4 text-center">
-            ❌ Something went wrong. Please try again.
-          </p>
+          toast.error("Something went wrong. Please try again.")
         )}
       </div>
     </section>

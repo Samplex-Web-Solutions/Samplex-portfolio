@@ -1,29 +1,43 @@
 import { esentialTools } from "../constants";
-// import { useState } from "react";
 
 const Tools = () => {
   return (
-    <div className="essentialTools mt-3">
-      <div className="toolsIntro">
-        <span className="stackTitle  font-bold font-mono w-[100%] flex flex-row-reverse items-center gap-3 justify-end mb-2">My Tech Stack <div className="arrow"></div></span>
-        <span className="stackTD">
-          I work with a modern and efficient tech stack to build fast,
-          responsive, and user-friendly web applications.
-        </span>
+    <section className="max-w-7xl mx-auto md:py-0 py-4 px-6">
+      {/* Section Header */}
+      <div className="mb-8 md:mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          Tech Stack
+        </h2>
+        <p className="text-gray-400 max-w-lg leading-relaxed">
+          I build high-performance applications using a modern stack designed for speed, 
+          scalability, and maintainability.
+        </p>
       </div>
-      <div className="toolsList">
+
+      {/* Grid Display for Tools */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {esentialTools.map((tool) => (
-          <span key={tool.id} className="toolsStyle group">
-            <div className="img-wrapper ">
-              <img src={tool.imgPath} alt={tool.name} className="toolImg" />
+          <div 
+            key={tool.id} 
+            className="flex items-center gap-4 p-3 md:p-4 bg-[#0c0c0e] border border-white/5 rounded-xl hover:border-gray-500/50 hover:bg-white/2 transition-all duration-300 group"
+          >
+            {/* Tool Icon Wrapper */}
+            <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5">
+              <img 
+                src={tool.imgPath} 
+                alt={tool.name} 
+                className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300" 
+              />
             </div>
-            <div className="essentialtoolsName flex flex-col">
-              <span className="toolName">{tool.name}</span>
-            </div>
-          </span>
+            
+            {/* Tool Name */}
+            <span className="font-medium text-[14px] text-white tracking-wide">
+              {tool.name}
+            </span>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

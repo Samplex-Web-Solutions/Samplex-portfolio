@@ -1,23 +1,38 @@
 import { educationData } from "../constants";
+
 const Education = () => {
   return (
-    <div id="education" className="educationData w-full mx-0.5 mt-3 mb-10">
-      <div className="eduContainer p-4 ">
-        <h2 className="text-blue-400 text-[23px]  md:mb-10 md:text-[28px]  font-bold font-mono w-[100%] flex flex-row-reverse items-center gap-3 justify-end ">
-          Education <div className="arrow border bg-blue-300 w-[120px] h-[3px] "></div>
+    <section id="education" className="py-20 px-6 max-w-7xl mx-auto">
+      {/* Section Header */}
+      <div className="mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          Education
         </h2>
-        <div className="eduWrapper   bg-gray-500/20  border-2 flex-col  rounded-lg border-blue-800/50  px-3" >
-          {educationData.map((index) => (
-            <div key={index.id} className="bg-gray-800 font-bold font-sans flex flex-col rounded-2xl shadow-lg shadow-black/40 p-6  not-[2]:my-5">
-              <span className="bg-white w-max text-xl text-zinc-800 py-0.5 mb-1 px-5 rounded-3xl">{index.year}</span>
-              <span className="text-lg">{index.institute}</span>
-              <span className="text-gray-400 text-[16px] italic">{index.course}</span>
-              <span className="text-gray-300 mt-2">{index.description}</span>
-            </div>
-          ))}
-        </div>
+        <div className="w-20 h-1 bg-blue-600 rounded-full"></div>
       </div>
-    </div>
+
+      {/* Timeline Wrapper */}
+      <div className="relative border-l border-white/10 ml-3 space-y-12">
+        {educationData.map((item) => (
+          <div key={item.id} className="relative pl-8">
+            {/* Timeline Dot */}
+            <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.5)]"></div>
+            
+            {/* Content Card */}
+            <div className="bg-[#0c0c0e] border border-white/5 p-6 rounded-2xl hover:border-white/10 transition-all">
+              <span className="inline-block text-blue-400 text-sm font-semibold mb-2 bg-blue-500/10 px-3 py-1 rounded-full">
+                {item.year}
+              </span>
+              <h3 className="text-xl font-bold text-white mb-1">{item.institute}</h3>
+              <p className="text-gray-300 font-medium text-sm mb-3">{item.course}</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
