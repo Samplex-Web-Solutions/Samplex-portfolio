@@ -190,7 +190,7 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/samplex_web_solutions",
     imgPath: "/images/insta.png",
   },
   {
@@ -200,12 +200,12 @@ const socialImgs = [
   },
   {
     name: "x",
-    url: "https://www.x.com/",
+    url: "https://x.com/SamplexWeb",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/ojiemen-samuel-9b9a62259",
     imgPath: "/images/linkedin.png",
   },
 ];

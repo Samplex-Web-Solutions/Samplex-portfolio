@@ -1,4 +1,4 @@
-import Resume from "../assets/Samuel_Ojiemen.pdf";
+import Resume from "../assets/Ojiemen_Samuel_Frontend_Engineer.pdf";
 import { useEffect, useState, useRef } from "react";
 
 const Hero = () => {

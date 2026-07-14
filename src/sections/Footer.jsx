@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <img
               className="w-30 h-full"
-              src="public/images/portfolioLogo.webp"
+              src="/images/portfolioLogo.webp"
               alt="logo"
             />
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <FaGithub className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/in/your-link"
+            href="https://www.linkedin.com/in/ojiemen-samuel-9b9a62259"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
@@ -69,7 +69,7 @@ const Footer = () => {
             <FaLinkedin className="h-5 w-5" />
           </a>
           <a
-            href="https://twitter.com/your-handle"
+            href="https://x.com/SamplexWeb"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
@@ -77,7 +77,7 @@ const Footer = () => {
             <FaTwitter className="h-5 w-5" />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:samplexwebsolutions@gmail.com"
             className="hover:text-white transition"
           >
             <EnvelopeIcon className="h-5 w-5" />
