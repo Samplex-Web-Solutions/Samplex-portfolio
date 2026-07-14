@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               className="w-30 h-full"
               src="/images/portfolioLogo.webp"
-              alt="logo"
+              alt="samplex logo"
             />
           </div>
          <p className="text-sm text-gray-500">
